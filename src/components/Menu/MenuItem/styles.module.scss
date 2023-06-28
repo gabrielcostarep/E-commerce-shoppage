@@ -1,0 +1,12 @@
+@use '../../../styles/global.scss';
+
+.menuItem {
+  padding-bottom: 52px;
+  border-bottom: 4px solid transparent;
+  color: global.$Dark-grayish-blue;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 4px solid global.$Orange;
+  }
+}

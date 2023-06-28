@@ -1,0 +1,27 @@
+@use '../../styles/global.scss';
+
+.cart {
+  position: relative;
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover img {
+    filter: brightness(0.5);
+  }
+}
+
+.count {
+  display: flex;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 13px;
+  padding: 3px;
+  border-radius: 10px;
+  background-color: global.$Orange;
+  color: global.$White;
+  font-size: 0.7rem;
+}
