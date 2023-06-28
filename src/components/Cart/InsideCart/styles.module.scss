@@ -1,0 +1,36 @@
+@use '../../../styles/global.scss';
+
+.cart {
+  position: absolute;
+  top: 50px;
+  left: -175px;
+  min-width: 350px;
+  min-height: 250px;
+  border-radius: 10px;
+  background-color: global.$White;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border-bottom:  1px solid global.$Grayish-blue;
+
+  h1 {
+    margin-left: 25px;
+    font-size: 1rem;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+
+  p {
+    color: global.$Dark-grayish-blue;
+    font-weight: 700;
+  }
+}

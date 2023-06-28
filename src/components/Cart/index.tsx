@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { InsideCart } from './InsideCart';
+
 import iconCart from '../../assets/images/icon-cart.svg';
 
 import styles from './styles.module.scss';
@@ -16,7 +18,7 @@ export function Cart() {
       <img src={iconCart} alt="Carrinho de Compras" />
       <div className={styles.count}>1</div>
 
-      {revealCart && <h1>Carrinho</h1>}
+      {revealCart && <InsideCart />}
     </div>
   );
 }
