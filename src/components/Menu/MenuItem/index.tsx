@@ -1,14 +1,13 @@
 import styles from './styles.module.scss';
 
 interface MenuItemProps {
-  key: string;
   text: string;
   href: string;
 }
 
-export function MenuItem({ key, text, href }: MenuItemProps) {
+export function MenuItem({ text, href }: MenuItemProps) {
   return (
-    <a href={href} key={key} className={styles.menuItem}>
+    <a href={href} className={styles.menuItem}>
       {text}
     </a>
   );

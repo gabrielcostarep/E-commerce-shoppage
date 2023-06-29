@@ -1,0 +1,47 @@
+@use '../../styles/global.scss';
+
+.SliderContent {
+  max-width: 450px;
+}
+
+.product-images-slider {
+  &-wrapper {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+}
+
+.product-images-slider-thumbs {
+  .swiper-slide {
+    border: 2px solid transparent;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &-thumb-active {
+      border-color: global.$Orange;
+
+      img {
+        filter: opacity(0.3);
+      }
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 90px;
+    height: 90px;
+  
+    transition: filter 0.2s;
+
+    img {
+      border-radius: 10px;
+    }
+  
+    &:hover img {
+      filter: opacity(0.5);
+    }
+  }
+}
