@@ -11,7 +11,7 @@
 
 ## 🔨 Funcionalidades do projeto
 
-Neste projeto, tive a oportunidade de aplicar meus conhecimentos em React, onde utilizei a ContextAPI para o gerenciamento do estado do carrinho. Desde que comecei a utilizar TypeScript, me apaixonei, pois apreciei imensamente a experiência de desenvolvimento com essa linguagem. Além disso, a estilização com Sass proporcionou-me liberdade criativa, ao mesmo tempo em que não foi tão diferente de usar CSS puro.
+Neste projeto, tive a oportunidade de aplicar meus conhecimentos em React, onde utilizei a ContextAPI para o gerenciamento do estado do carrinho. Desde que comecei a utilizar TypeScript em meus projetos, percebi os benefícios de desenvolvimento com essa linguagem. Além disso, a estilização com Sass proporcionou-me liberdade criativa, ao mesmo tempo em que não foi tão diferente de usar CSS puro.
 
 <br>
 
