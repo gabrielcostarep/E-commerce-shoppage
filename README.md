@@ -4,7 +4,7 @@
 ## Desafio do site Frontend Mentor.
 
  <div align="center" >
-  <img src="./Readme-gif.gif" alt="demo-web" height="800em">
+  <img src="./Readme-gif.gif" alt="demo-web" width="800em">
 </div>
 
 <br>
