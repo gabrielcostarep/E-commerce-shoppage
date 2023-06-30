@@ -1,0 +1,35 @@
+@use '../../../styles/global.scss';
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.priceContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.priceDiscount {
+  font-size: 1.7rem;
+}
+
+.percent {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: global.$Pale-orange;
+  color: global.$Orange;
+  font-size: 0.8rem;
+}
+
+.priceDelet {
+  color: global.$Grayish-blue;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}

@@ -17,11 +17,12 @@
   right: -8px;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 13px;
-  padding: 3px;
+  min-width: 20px;
+  height: 14px;
+  padding: 4px;
   border-radius: 10px;
   background-color: global.$Orange;
   color: global.$White;
   font-size: 0.7rem;
+  font-weight: 700;
 }

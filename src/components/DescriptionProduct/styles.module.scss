@@ -1,0 +1,26 @@
+@use '../../styles/global.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  gap: 20px;
+}
+
+.category {
+  color: global.$Orange;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  filter: opacity(0.9);
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 100%;
+}
+
+.description {
+  color: global.$Dark-grayish-blue;
+}

@@ -21,8 +21,8 @@ import ImageProductThumbs2 from '../../assets/images/image-product-2-thumbnail.j
 import ImageProductThumbs3 from '../../assets/images/image-product-3-thumbnail.jpg';
 import ImageProductThumbs4 from '../../assets/images/image-product-4-thumbnail.jpg';
 
-export default function App() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+export function SliderSwiper() {
+  const [thumbsSwiper, setThumbsSwiper] = useState();
 
   return (
     <div className="SliderContent">
@@ -30,7 +30,6 @@ export default function App() {
         effect={'fade'}
         loop={true}
         spaceBetween={10}
-        grabCursor={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[EffectFade, Thumbs]}
         className=".product-images-slider"
