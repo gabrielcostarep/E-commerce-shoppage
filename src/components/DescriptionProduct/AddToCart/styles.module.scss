@@ -1,0 +1,68 @@
+@use '../../../styles/global.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: global.$Light-grayish-blue;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: transparent;
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: opacity(0.5);
+    }
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.addToCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: global.$Orange;
+
+  transition: filter 0.2s;
+  gap: 10px;
+
+  &:hover {
+    filter: opacity(0.5);
+  }
+
+  img {
+    width: 1rem;
+    height: 1rem;
+    filter: brightness(6);
+  }
+
+  span {
+    color: global.$White;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+}

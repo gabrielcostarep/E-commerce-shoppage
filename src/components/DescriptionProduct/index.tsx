@@ -1,4 +1,6 @@
 import { PriceProduct } from './PriceProduct';
+import { AddToCard } from './AddToCart';
+
 import styles from './styles.module.scss';
 
 export function DescriptionProduct() {
@@ -15,6 +17,8 @@ export function DescriptionProduct() {
       </p>
 
       <PriceProduct />
+
+      <AddToCard />
     </div>
   );
 }
