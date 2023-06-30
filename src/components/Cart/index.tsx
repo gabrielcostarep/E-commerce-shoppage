@@ -1,22 +1,25 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 
 import { InsideCart } from './InsideCart';
 
 import iconCart from '../../assets/images/icon-cart.svg';
 
+import { ProductContext } from '../../App';
+
 import styles from './styles.module.scss';
 
-export function Cart() {
-  const [revealCart, setRevealCart] = useState(false);
+interface CartProps {
+  revealCart: boolean;
+  setRevealCart: (revealCart: boolean) => void;
+}
+
+export function Cart({ revealCart, setRevealCart }: CartProps) {
+  const { count } = useContext(ProductContext);
 
   return (
-    <div
-      className={styles.cart}
-      onMouseOver={() => setRevealCart(true)}
-      onMouseLeave={() => setRevealCart(false)}
-    >
+    <div className={styles.cart} onMouseOver={() => setRevealCart(true)}>
       <img src={iconCart} alt="Carrinho de Compras" />
-      <div className={styles.count}>1</div>
+      {count > 0 && <div className={styles.count}>{count}</div>}
 
       {revealCart && <InsideCart />}
     </div>

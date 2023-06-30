@@ -5,7 +5,7 @@
   cursor: pointer;
   transition: filter 0.2s;
 
-  &:hover img {
+  &:hover > img {
     filter: brightness(0.5);
   }
 }
